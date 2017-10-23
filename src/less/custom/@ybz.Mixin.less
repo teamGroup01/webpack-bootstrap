@@ -1,0 +1,124 @@
+
+/*  for Example  display  
+ *  @var = inlie-block
+ *  .d(@var) => display: inline-block; 
+ */
+.d(@model){
+	display: @model;
+}
+
+
+
+/*  for Example  height
+ *  @var = 72px
+ *  .h(@var) => height: @var; 
+ */
+.h(@height){
+	height: @height;
+}
+
+
+/*  for Example  width
+ *  @var = 72px
+ *  .w(@var) => width: @var; 
+ */
+.w(@width){
+	width: @width;
+}
+
+/**
+ * for Example line-height
+ * @var = 5;
+ * .lg(@var) =>line-height: @var;
+ */
+
+.lh(@lineheight){
+	line-height: @lineheight;
+}
+
+
+/**
+ * for Example margin
+ * var @t=2,@r=2,@b=2,@l=2;
+ * .m(@t,@r,@b,@l) => margin: @t,@r,@b,@l;
+ */
+.m (@t,@r,@b,@l){
+	margin: @arguments;
+}
+.mt(@margintop) {
+	margin-top: @margintop;
+}
+.ml(@marginleft){
+	margin-right: @marginleft;
+}
+.mb(@marginbottom) {
+	margin-bottom: @marginbottom;
+}
+.ml(@marginleft){
+	margin-left: @marginleft;
+}
+
+
+/**
+ * for Example padding
+ * @t=2,@r=2,@b=2,@l=2;
+ * .p(@t,@r,@b,@l) => padding: @t,@r,@b,@l;
+ */
+.p (@t,@r,@b,@l){
+	padding: @arguments;
+}
+.pt(@paddingtop) {
+	padding-top: @paddingtop;
+}
+.pl(@paddingleft){
+	padding-right: @paddingleft;
+}
+.pb(@paddingbottom) {
+	padding-bottom: @paddingbottom;
+}
+.pl(@paddingleft){
+	padding-left: @paddingleft;
+}
+
+
+
+/**
+ * for Example border
+ * @var = 1px dotted transparent;
+ * .p(@t,@r,@b,@l) => padding: @t,@r,@b,@l;
+ */
+
+.ber(@border){
+	border:@border;
+}
+
+
+
+/**
+ * for Example background
+ * @var = transparent;
+ * .bg(@var) => background-color: @var
+ */
+
+.bg(@backgroundcolor){
+	background-color: @backgroundcolor;
+}
+
+
+
+.ls(@letterspace) {
+	letter-spacing: @letterspace;
+}
+
+
+/*
+ * 子元素水平垂直居中
+ */
+ .parent_relative(@width,@height) {
+	position: relative;
+	width: @width;
+	height: @height;
+ }
+.child_absoutle2(@ml, @mt) {
+	position: absolute;top: 50%;left: 50%;margin-left: -@ml;margin-top:-@mt;
+}
